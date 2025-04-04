@@ -1,0 +1,3 @@
+bypass-char: '!'
+id: prevent_chat
+enabled: true

@@ -1,0 +1,20 @@
+pages:
+  page1:
+    items:
+      '1':
+        material: POTION
+        displayname: '&d&lPotion with the effects from a &6God Apple'
+        name: '&d&lGod potion'
+        buy: 9165
+        sell: 2280
+        NBTData: '{CustomPotionEffects:[{Id:10,Amplifier:2,Duration:400},{Id:22,Amplifier:4,Duration:2400},{Id:11,Amplifier:1,Duration:6000},{Id:12,Amplifier:1,Duration:6000}]}'
+      '2':
+        material: DIAMOND_PICKAXE
+        name: '&6&lUnbreakable diamond pickaxe'
+        lore:
+        - '&aThis pickaxe also has efficiency 15.'
+        buy: 1850000
+        sell: 999000
+        enchantments:
+        - EFFICIENCY:15
+        NBTData: '{Unbreakable:1b}'

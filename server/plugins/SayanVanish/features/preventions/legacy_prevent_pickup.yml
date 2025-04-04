@@ -1,0 +1,3 @@
+condition: true
+id: legacy_prevent_pickup
+enabled: true

@@ -1,0 +1,25 @@
+# Native must be set to true for any Minecraft items
+native: true
+
+# OPTIONAL. Custom recipes that can be used to craft this item. Again, pay attention to formatting.
+recipes:
+
+  # Start of a new recipe
+  -
+    # REQUIRED. Whether or not the recipe is shaped. This recipe is not shaped
+    shaped: false
+
+    # REQUIRED. All of the items required for the recipe. The amounts can add up to at most nine.
+    # Again, pay close attention to the formatting. Start each new item with a -, and indent all children.
+    # Because this recipe is not shaped (shaped: false), each child of items must have both 'item' and 'amount'
+    items:
+      # Start of a new item
+      -
+        # REQUIRED. the item; see referencing items in compressedCobblestone.yml. This references the custom item compressedCobblestone
+        item: compressedCobblestone
+
+        # REQUIRED. the amount of the above item
+        amount: 1
+
+    # OPTIONAL. The amount of compressedCobblestone created from this recipe. Defaults to 1
+    resultAmount: 9

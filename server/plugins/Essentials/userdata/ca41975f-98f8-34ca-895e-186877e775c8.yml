@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 0:0:0:0:0:0:0:1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1741209401418
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1741402286563
+  login: 1741402160448
+money: '23704.44'
+logoutlocation:
+  world: 35e1cdad-0b1a-4952-b9e9-ad135ff08b1f
+  world-name: world
+  x: -47.09961191644809
+  y: 103.73054185490295
+  z: 222.36067943417126
+  yaw: -0.600067138671875
+  pitch: 56.249996185302734
+last-account-name: Akrum_BOI
+lastlocation:
+  world: 35e1cdad-0b1a-4952-b9e9-ad135ff08b1f
+  world-name: world
+  x: -49.565286576407786
+  y: 104.4851804381284
+  z: 223.71209192582089
+  yaw: -241.86993408203125
+  pitch: 84.29999542236328

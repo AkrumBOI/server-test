@@ -1,0 +1,111 @@
+# The items that will be used in item GUIs,
+# such as when running /cui inspect or /cui info
+#
+# You could set these to custom items to get some cool effects
+# (see "referencing items" in either items/compressedCobblestone.yml or on the wiki at
+# https://github.com/jojodmo/CustomItems/wiki/Custom-Item-Reference if you're unsure how to do this)
+#
+# For example, you could make a new custom item that looks like a back button, and use
+# that for previousMenu
+
+menuItems:
+  previousMenu: "minecraft:OBSIDIAN"
+  information: "minecraft:PAPER"
+  making: "minecraft:ENDER_EYE"
+  crafting: "minecraft:CRAFTING_TABLE"
+  smelting: "minecraft:FURNACE"
+  obtaining: "minecraft:COMPASS"
+  usage: "minecraft:DIAMOND_PICKAXE"
+  downArrow: "minecraft:GLASS_PANE"
+  upArrow: "minecraft:GLASS_PANE"
+  noPermission: "minecraft:RED_STAINED_GLASS_PANE"
+  craftingResultArrow: "minecraft:LIME_STAINED_GLASS_PANE"
+  relatedItemsLeftArrow: "minecraft:BLUE_STAINED_GLASS_PANE"
+  relatedItemsDownArrow: "minecraft:WHITE_STAINED_GLASS_PANE"
+  relatedItemsRightArrow: "minecraft:BLUE_STAINED_GLASS_PANE"
+
+# Whether or not categories should be enabled. Set to "true" to enable categories
+categoriesEnabled: false
+
+# Item Categories along with the items that represent them
+# You can add items to categories by setting "category" in
+# the item's YML file.
+#
+# Any item that doesn't have a category will be put in the
+# "miscellaneous" category by default.
+#
+# The format is
+#
+#   [category]:
+#     itemName: [...]
+#     item: [...]
+#     itemOrder: (...)
+#
+# Where the item is the item that represents this category.
+# This can be a Minecraft item or a Custom Item. See referencing
+# items above.
+#
+# itemName is the name that appears in the Custom Item list inventory
+# You can use &color codes in this name
+#
+# If you want to order the items in the category's item list view, you can
+# set itemOrder. Items will be added in the order that they appear in itemOrder.
+# Keep in mind that you STILL NEED TO REGISTER THE ITEM INTO THE CATEGORY IN THE
+# ITEM'S YML FILE. Any items that aren't in the list but are in the category will
+# be added to the inventory after the ordered items.
+categories:
+  miscellaneous:
+    itemName: "&dMiscellaneous"
+    item: "minecraft:DIAMOND_PICKAXE"
+    itemOrder:
+      - "myFirstCustomItem"
+      - "mySecondCustomItem"
+      - "myThirdCustomItem"
+
+
+# The order you want your categories to show up in the category inventory.
+# Anything that isn't included here will be put at the end of the inventory,
+# in an undefined order.
+categoryOrder:
+   - "myFirstCategory"
+   - "miscellaneous"
+
+# Whether or not item list permissions should be enabled.
+#
+# if this is set to "true", players will need certain permissions to see certain categories or items
+# customitems.list.category.myCategory | gives the player permission to view the "myCategory" category when running /cui list
+# customitems.list.category.* | gives the player permission to view all of the categories when running /cui list
+# customitems.list.item.category.myCategory | gives the player permission to view ALL of the items in the myCategory category.
+# REMEMBER: YOU MUST STILL GIVE THE PLAYER THE PERMISSIONS customitems.list.category.myCategory TO ALLOW THEM TO SEE THE CATEGORY
+# customitems.list.item.myCustomItem | gives the player permission to see the myCustomItem item when running /cui list
+# customitems.list.item.* | gives the player permission to see all of the items, or, if you're using categories, gives
+# the player permission to view all of the items in the categories they're allowed to see.
+#
+# customitems.list.* | gives the player permission to see all items and categories
+#
+# It is recommended that if you set this to "true", you give all players who have the permission customitems.list.category.myCategory
+# the permission customitems.list.category.myCategory.items as well, for all items. However, this isn't necessary -- it just might make things easier.
+#
+# Default: false
+listPermissionsEnabled: false
+
+
+#
+# DEFAULTS
+#
+
+# menuItems:
+#  previousMenu: "minecraft:OBSIDIAN"
+#  information: "minecraft:PAPER"
+#  making: "minecraft:ENDER_EYE"
+#  crafting: "minecraft:CRAFTING_TABLE"
+#  obtaining: "minecraft:COMPASS"
+#  usage: "minecraft:DIAMOND_PICKAXE"
+#  downArrow: "minecraft:GLASS_PANE"
+#  upArrow: "minecraft:GLASS_PANE"
+#  noPermission: "minecraft:RED_STAINED_GLASS_PANE"
+#  craftingResultArrow: "minecraft:LIME_STAINED_GLASS_PANE"
+#  relatedItemsLeftArrow: "minecraft:BLUE_STAINED_GLASS_PANE"
+#  relatedItemsDownArrow: "minecraft:WHITE_STAINED_GLASS_PANE"
+#  relatedItemsRightArrow: "minecraft:BLUE_STAINED_GLASS_PANE"
+

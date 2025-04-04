@@ -1,0 +1,5 @@
+fallback-mode: SURVIVAL
+check-game-mode-change: false
+check-toggle-sneak: true
+id: gamemode
+enabled: true
